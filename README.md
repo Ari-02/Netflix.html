@@ -1,1 +1,155 @@
-# Netflix.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body{
+		background-color:#21202b;
+		color:white;
+		}
+       .nav_left {
+       margin-right:10;
+       display:flex
+       }
+      .nav_right {
+  	top:20;
+      margin-left:auto;
+      display: flex
+      gap: 10px;
+      }
+     #BackImage{
+ 	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2kLKy__4Oj64DcerUnRw0ypB48jorCW7DpQ&usqp=CAU');
+	 background-size: cover;
+ 	background-position: center; 
+     background-repeat: no-repeat;
+     }
+     select,button{
+     background-color:#6b6b70; 
+     color:white;
+     height:30;
+     border:black;
+     }
+     .RW{
+     background-color:#cc2525; 
+     color:white;
+     border:none;
+     cursor:pointer;
+     }
+     p{
+     font-weight:300;
+     }
+     .top-boxes {
+      display: flex;
+      }
+     .box {
+      flex: 1;
+      border: 3px solid #4f070b;
+      box-sizing: border-box;
+      height: auto;
+      padding:15;
+      border-spacing: 20px;
+      border-radius: 30px;
+      }  
+      .hide-para {
+      display: none;
+      }
+      .B{
+      width:280;
+      height:50;
+      text-align:left;
+      text-transform:uppercase;
+      }
+  </style>
+  <script>
+    function Para(paraId) {
+      var paragraph = document.getElementById(paraId);
+      paragraph.style.display = (paragraph.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+	<title>Netflix</title>
+</head>
+<body>
+		<div id="BackImage">
+				<div class="nav_left">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrPiSavWF5aL2JFs4ICur88DC-vgYQLDj8CA&usqp=CAU" height="50" alt="Netflix Logo">
+				</div>
+				<div class="nav_right">
+						<select>
+						<option value="English">English </option>
+						<option value="Hindi">हिंदी </option>
+						</select>
+						<button class="RW" >Sign In</button>
+				</div>
+				<br><br>
+				<h2>Unlimited movies, TV shows and more</h2>
+				<p>Starts at ₹149. Cancel anytime.</p>
+				<p style="font-size:9px">Ready to watch? Enter your email to create or restart your membership.</p>
+				<input type="email" placeholder="Email address" style="height:40;">
+				<button class="RW" style="width:120;height:40;">Get Started ></button>
+				<br><br><br><br>
+		</div>
+		<p>
+				<b> More reasons to join </b> 
+		</p>
+		<div class="top-boxes">
+				<section id="TV" class="box">
+						<b>Enjoy on your TV</b>
+						<p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.<p>
+				</section>
+				<section id="download" class="box">
+						<b>Download your shows to watch offline</b>
+						<p>Save your favourites easily and always have something to watch.<p>
+				</section>
+		</div>
+        <div class="top-boxes">
+				<section id="watch" class="box">
+						<b>Watch everywhere</b>
+						<p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.<p>
+				</section>
+				<section id="kids" class="box">
+						<b>Create profiles for kids</b>
+						<p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.<p>
+				</section>
+        </div>
+        <br><br>
+		<div>
+				<b>Frequently asked questions </b>
+				<br><br>
+				<section>
+				<button onclick="Para('hide-para1')" class="B">What is Netflix?  +</button>
+				<p id="hide-para1" class="hide-para">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+				</section>
+				<br>
+				<section>
+				<button onclick="Para('hide-para2')" class="B">How much does Netflix cost?  +</button>
+				<p id="hide-para2" class="hide-para">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+				</section>
+				<br>
+				<section>
+				<button onclick="Para('hide-para3')" class="B">Where can I watch? +</button>
+				<p id="hide-para3" class="hide-para">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+				</section>
+				<br>
+				<section>
+				<button onclick="Para('hide-para4')" class="B">How do I cancel?  +</button>
+				<p id="hide-para4" class="hide-para">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+				</section>
+				<br>
+				<section> 
+				<button onclick="Para('hide-para5')" class="B">What can I watch on Netflix?  +</button>
+				<p id="hide-para5" class="hide-para">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+				</section>
+				<br>
+				<section>  
+				<button onclick="Para('hide-para6')" class="B">Is Netflix good for kids?  +</button>
+				<p id="hide-para6" class="hide-para">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br><br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>   
+				</section>
+		</div>
+		<br><br>
+		<footer>Any Questions? Call 
+		<u>000-800-919-1694</u>
+		</footer>
+</body>
+</html>
